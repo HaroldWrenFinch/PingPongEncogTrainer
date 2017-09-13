@@ -10,4 +10,4 @@ To run:
 
 A trained model can be try with this program:
 
-        https://github.com/HaroldWrenFinch/PingPongAiProcessing
+https://github.com/HaroldWrenFinch/PingPongAiProcessing
