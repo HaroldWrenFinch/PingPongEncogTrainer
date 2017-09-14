@@ -11,7 +11,7 @@ import java.util.function.Consumer;
  * Created by jack on 2017.04.08..
  */
 public class PongLogic {
-    public static final double MAX_ITERATION = 20000.00;
+    public static final double MAX_ITERATION = 200000.00;
     private Bat right;
     private Wall wall;
     private Ball ball;

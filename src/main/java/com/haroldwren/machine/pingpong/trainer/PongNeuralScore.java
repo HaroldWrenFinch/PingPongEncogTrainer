@@ -4,7 +4,7 @@ import com.haroldwren.machine.pingpong.game.PongLogic;
 import org.encog.ml.CalculateScore;
 import org.encog.ml.MLMethod;
 import org.encog.ml.data.MLDataSet;
-import org.encog.neural.networks.BasicNetwork;
+import org.encog.neural.neat.NEATNetwork;
 
 import static java.lang.Math.pow;
 
@@ -37,7 +37,7 @@ public class PongNeuralScore implements CalculateScore {
         pongLogic.setup();
 
         for(long i=0;i<PongLogic.MAX_ITERATION;i++) {
-            pongLogic.run((BasicNetwork) method);
+            pongLogic.run((NEATNetwork) method);
         }
         long succeededFrame = pongLogic.getBall().getSucceededFrame();
         if(succeededFrame == PongLogic.MAX_ITERATION) {
